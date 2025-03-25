@@ -61,3 +61,19 @@ ActivateLCD(CS_PIN): Pulls the CS pin low to enable communication with the LCD.
 DeactivateLCD(CS_PIN): Pulls the CS pin high to disable communication with the LCD, allowing other SPI devices to use the bus.
 
 These functions are essential for managing SPI communication between multiple peripherals on the same bus.
+
+## Setup Environement
+
+### Install spidev
+Install spidev python library
+sudo pip install spidev
+
+Edit orangepiEnv.txt​ file
+
+` sudo nano /boot/orangepiEnv.txt​ `
+
+Add a line to that file
+
+` overlay=spi-spidev1 `
+
+Reboot Orange Pi
